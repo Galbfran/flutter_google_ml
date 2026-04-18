@@ -7,7 +7,8 @@ plugins {
 
 android {
     namespace = "com.example.google_ml_kit"
-    compileSdk = flutter.compileSdkVersion
+    // ML Kit / requisitos explícitos del proyecto
+    compileSdk = 35
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -24,8 +25,8 @@ android {
         applicationId = "com.example.google_ml_kit"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 21
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
