@@ -7,6 +7,7 @@ import 'package:google_ml_kit_test_app/features/example/bloc/example_bloc.dart';
 import 'package:google_ml_kit_test_app/features/example/data/repositories/post_repository.dart';
 import 'package:google_ml_kit_test_app/features/example/presentation/pages/example_page.dart';
 import 'package:google_ml_kit_test_app/features/home/presentation/pages/home_page.dart';
+import 'package:google_ml_kit_test_app/features/permissions/presentation/pages/permissions_debug_page.dart';
 import 'package:google_ml_kit_test_app/features/splash/bloc/splash_bloc.dart';
 import 'package:google_ml_kit_test_app/features/splash/presentation/pages/splash_page.dart';
 
@@ -42,6 +43,12 @@ final class AppRouter {
               ..add(const ExampleLoadRequested()),
             child: const ExamplePage(),
           );
+        },
+      ),
+      GoRoute(
+        path: AppRoutes.permissionsDebug,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PermissionsDebugPage();
         },
       ),
     ],

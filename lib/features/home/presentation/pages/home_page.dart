@@ -20,6 +20,11 @@ class HomePage extends StatelessWidget {
               onPressed: () => context.push(AppRoutes.example),
               child: const Text('Ir a Example (Dio + DTO)'),
             ),
+            const SizedBox(height: 12),
+            OutlinedButton(
+              onPressed: () => context.push(AppRoutes.permissionsDebug),
+              child: const Text('Lab permisos (cámara)'),
+            ),
           ],
         ),
       ),
