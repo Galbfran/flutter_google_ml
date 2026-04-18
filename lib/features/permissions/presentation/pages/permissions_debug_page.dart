@@ -32,6 +32,17 @@ class PermissionsDebugPage extends StatelessWidget {
               ),
               const SizedBox(height: 32),
               Text(
+                'Fotos / galería: ${_label(state.photos)}',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 12),
+              FilledButton(
+                onPressed: () =>
+                    context.read<PermissionsCubit>().requestPhotos(),
+                child: const Text('Solicitar fotos'),
+              ),
+              const SizedBox(height: 32),
+              Text(
                 'Micrófono: ${_label(state.microphone)}',
                 style: Theme.of(context).textTheme.titleMedium,
               ),

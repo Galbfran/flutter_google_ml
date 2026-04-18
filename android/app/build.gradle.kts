@@ -7,8 +7,8 @@ plugins {
 
 android {
     namespace = "com.example.google_ml_kit"
-    // ML Kit / requisitos explícitos del proyecto
-    compileSdk = 35
+    // Plugins (p. ej. image_picker) y AndroidX recientes requieren compileSdk ≥ 36.
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

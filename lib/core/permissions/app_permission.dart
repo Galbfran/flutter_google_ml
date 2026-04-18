@@ -4,4 +4,6 @@
 enum AppPermission {
   camera,
   microphone,
+  /// Galería / fotos (image_picker, OCR desde imagen).
+  photos,
 }

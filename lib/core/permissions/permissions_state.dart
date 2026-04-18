@@ -7,21 +7,25 @@ final class PermissionsState extends Equatable {
   const PermissionsState({
     this.camera = AppPermissionStatus.unknown,
     this.microphone = AppPermissionStatus.unknown,
+    this.photos = AppPermissionStatus.unknown,
   });
 
   final AppPermissionStatus camera;
   final AppPermissionStatus microphone;
+  final AppPermissionStatus photos;
 
   PermissionsState copyWith({
     AppPermissionStatus? camera,
     AppPermissionStatus? microphone,
+    AppPermissionStatus? photos,
   }) {
     return PermissionsState(
       camera: camera ?? this.camera,
       microphone: microphone ?? this.microphone,
+      photos: photos ?? this.photos,
     );
   }
 
   @override
-  List<Object?> get props => [camera, microphone];
+  List<Object?> get props => [camera, microphone, photos];
 }

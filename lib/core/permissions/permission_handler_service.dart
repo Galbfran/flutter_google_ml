@@ -27,6 +27,7 @@ final class PermissionHandlerService implements PermissionService {
     return switch (permission) {
       AppPermission.camera => ph.Permission.camera,
       AppPermission.microphone => ph.Permission.microphone,
+      AppPermission.photos => ph.Permission.photos,
     };
   }
 

@@ -16,7 +16,12 @@ final class PermissionsCubit extends Cubit<PermissionsState> {
   Future<void> refreshAll() async {
     final camera = await _service.status(AppPermission.camera);
     final microphone = await _service.status(AppPermission.microphone);
-    emit(state.copyWith(camera: camera, microphone: microphone));
+    final photos = await _service.status(AppPermission.photos);
+    emit(state.copyWith(
+      camera: camera,
+      microphone: microphone,
+      photos: photos,
+    ));
   }
 
   Future<void> requestCamera() async {
@@ -27,6 +32,11 @@ final class PermissionsCubit extends Cubit<PermissionsState> {
   Future<void> requestMicrophone() async {
     final microphone = await _service.request(AppPermission.microphone);
     emit(state.copyWith(microphone: microphone));
+  }
+
+  Future<void> requestPhotos() async {
+    final photos = await _service.request(AppPermission.photos);
+    emit(state.copyWith(photos: photos));
   }
 
   Future<void> openAppSettings() async {

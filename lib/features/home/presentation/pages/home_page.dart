@@ -25,6 +25,11 @@ class HomePage extends StatelessWidget {
               onPressed: () => context.push(AppRoutes.permissionsDebug),
               child: const Text('Lab permisos (cámara)'),
             ),
+            const SizedBox(height: 12),
+            FilledButton.tonal(
+              onPressed: () => context.push(AppRoutes.textRecognition),
+              child: const Text('OCR (imagen → texto)'),
+            ),
           ],
         ),
       ),

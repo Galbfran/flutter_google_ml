@@ -10,12 +10,20 @@ import 'package:google_ml_kit_test_app/features/home/presentation/pages/home_pag
 import 'package:google_ml_kit_test_app/features/permissions/presentation/pages/permissions_debug_page.dart';
 import 'package:google_ml_kit_test_app/features/splash/bloc/splash_bloc.dart';
 import 'package:google_ml_kit_test_app/features/splash/presentation/pages/splash_page.dart';
+import 'package:google_ml_kit_test_app/features/text_recognition/bloc/text_recognition_bloc.dart';
+import 'package:google_ml_kit_test_app/features/text_recognition/data/repositories/text_recognition_repository.dart';
+import 'package:google_ml_kit_test_app/features/text_recognition/presentation/pages/text_recognition_page.dart';
 
 /// Configuración de navegación. Recibe dependencias que las pantallas necesitan.
 final class AppRouter {
-  AppRouter(this._postRepository);
+  AppRouter({
+    required PostRepository postRepository,
+    required TextRecognitionRepository textRecognitionRepository,
+  })  : _postRepository = postRepository,
+        _textRecognitionRepository = textRecognitionRepository;
 
   final PostRepository _postRepository;
+  final TextRecognitionRepository _textRecognitionRepository;
 
   late final GoRouter router = GoRouter(
     initialLocation: AppRoutes.splash,
@@ -49,6 +57,16 @@ final class AppRouter {
         path: AppRoutes.permissionsDebug,
         builder: (BuildContext context, GoRouterState state) {
           return const PermissionsDebugPage();
+        },
+      ),
+      GoRoute(
+        path: AppRoutes.textRecognition,
+        builder: (BuildContext context, GoRouterState state) {
+          return BlocProvider(
+            create: (_) =>
+                TextRecognitionBloc(repository: _textRecognitionRepository),
+            child: const TextRecognitionPage(),
+          );
         },
       ),
     ],
