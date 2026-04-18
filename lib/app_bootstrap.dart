@@ -49,6 +49,7 @@ final class AppBootstrap extends StatelessWidget {
     return AppRouter(
       postRepository: postRepository,
       textRecognitionRepository: textRecognitionRepository,
+      permissionService: permissionService,
     );
   }
 }

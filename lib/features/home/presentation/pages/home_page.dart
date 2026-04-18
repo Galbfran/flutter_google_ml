@@ -30,6 +30,11 @@ class HomePage extends StatelessWidget {
               onPressed: () => context.push(AppRoutes.textRecognition),
               child: const Text('OCR (imagen → texto)'),
             ),
+            const SizedBox(height: 12),
+            FilledButton(
+              onPressed: () => context.push(AppRoutes.objectDetection),
+              child: const Text('Objetos en vivo (cámara)'),
+            ),
           ],
         ),
       ),

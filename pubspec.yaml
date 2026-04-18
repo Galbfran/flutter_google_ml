@@ -32,6 +32,9 @@ dependencies:
 
   # ML Kit (plugin puntual; evita el meta-paquete google_ml_kit)
   google_mlkit_text_recognition: ^0.15.1
+  camera: ^0.12.0+1
+  google_mlkit_object_detection: ^0.15.1
+  google_mlkit_commons: ^0.11.1
 
 dev_dependencies:
   flutter_test:
