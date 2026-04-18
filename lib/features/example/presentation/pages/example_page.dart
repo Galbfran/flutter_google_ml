@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:google_ml_kit/features/example/bloc/example_bloc.dart';
+import 'package:google_ml_kit_test_app/features/example/bloc/example_bloc.dart';
 
 class ExamplePage extends StatelessWidget {
   const ExamplePage({super.key});

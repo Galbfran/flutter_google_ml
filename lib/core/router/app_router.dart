@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:google_ml_kit/core/router/app_routes.dart';
-import 'package:google_ml_kit/features/example/bloc/example_bloc.dart';
-import 'package:google_ml_kit/features/example/data/repositories/post_repository.dart';
-import 'package:google_ml_kit/features/example/presentation/pages/example_page.dart';
-import 'package:google_ml_kit/features/home/presentation/pages/home_page.dart';
-import 'package:google_ml_kit/features/splash/bloc/splash_bloc.dart';
-import 'package:google_ml_kit/features/splash/presentation/pages/splash_page.dart';
+import 'package:google_ml_kit_test_app/core/router/app_routes.dart';
+import 'package:google_ml_kit_test_app/features/example/bloc/example_bloc.dart';
+import 'package:google_ml_kit_test_app/features/example/data/repositories/post_repository.dart';
+import 'package:google_ml_kit_test_app/features/example/presentation/pages/example_page.dart';
+import 'package:google_ml_kit_test_app/features/home/presentation/pages/home_page.dart';
+import 'package:google_ml_kit_test_app/features/splash/bloc/splash_bloc.dart';
+import 'package:google_ml_kit_test_app/features/splash/presentation/pages/splash_page.dart';
 
 /// Configuración de navegación. Recibe dependencias que las pantallas necesitan.
 final class AppRouter {

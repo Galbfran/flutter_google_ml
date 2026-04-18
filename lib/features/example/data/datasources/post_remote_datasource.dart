@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import 'package:google_ml_kit/features/example/data/models/post_response_dto.dart';
+import 'package:google_ml_kit_test_app/features/example/data/models/post_response_dto.dart';
 
 abstract class PostRemoteDataSource {
   Future<PostResponseDto> fetchPost(int id);

@@ -1,6 +1,6 @@
-import 'package:google_ml_kit/features/example/data/datasources/post_remote_datasource.dart';
-import 'package:google_ml_kit/features/example/data/repositories/post_repository.dart';
-import 'package:google_ml_kit/features/example/model/post.dart';
+import 'package:google_ml_kit_test_app/features/example/data/datasources/post_remote_datasource.dart';
+import 'package:google_ml_kit_test_app/features/example/data/repositories/post_repository.dart';
+import 'package:google_ml_kit_test_app/features/example/model/post.dart';
 
 class PostRepositoryImpl implements PostRepository {
   PostRepositoryImpl(this._remote);

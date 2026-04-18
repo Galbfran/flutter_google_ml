@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:google_ml_kit/core/router/app_routes.dart';
-import 'package:google_ml_kit/features/splash/bloc/splash_bloc.dart';
+import 'package:google_ml_kit_test_app/core/router/app_routes.dart';
+import 'package:google_ml_kit_test_app/features/splash/bloc/splash_bloc.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});

@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:google_ml_kit/features/example/data/repositories/post_repository.dart';
-import 'package:google_ml_kit/features/example/model/post.dart';
+import 'package:google_ml_kit_test_app/features/example/data/repositories/post_repository.dart';
+import 'package:google_ml_kit_test_app/features/example/model/post.dart';
 
 part 'example_event.dart';
 part 'example_state.dart';

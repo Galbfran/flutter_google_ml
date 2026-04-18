@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:logger/logger.dart';
 
-import 'package:google_ml_kit/core/config/app_config.dart';
-import 'package:google_ml_kit/core/network/interceptors/dio_logger_interceptor.dart';
+import 'package:google_ml_kit_test_app/core/config/app_config.dart';
+import 'package:google_ml_kit_test_app/core/network/interceptors/dio_logger_interceptor.dart';
 
 /// Fábrica de [Dio] con opciones base e interceptores comunes.
 ///

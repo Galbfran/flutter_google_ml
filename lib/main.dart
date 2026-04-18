@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:google_ml_kit/app.dart';
-import 'package:google_ml_kit/core/config/app_config.dart';
-import 'package:google_ml_kit/core/network/dio_client.dart';
-import 'package:google_ml_kit/core/router/app_router.dart';
-import 'package:google_ml_kit/features/example/data/datasources/post_remote_datasource.dart';
-import 'package:google_ml_kit/features/example/data/repositories/post_repository_impl.dart';
+import 'package:google_ml_kit_test_app/app.dart';
+import 'package:google_ml_kit_test_app/core/config/app_config.dart';
+import 'package:google_ml_kit_test_app/core/network/dio_client.dart';
+import 'package:google_ml_kit_test_app/core/router/app_router.dart';
+import 'package:google_ml_kit_test_app/features/example/data/datasources/post_remote_datasource.dart';
+import 'package:google_ml_kit_test_app/features/example/data/repositories/post_repository_impl.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

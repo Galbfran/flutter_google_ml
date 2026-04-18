@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:google_ml_kit/core/router/app_routes.dart';
+import 'package:google_ml_kit_test_app/core/router/app_routes.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
