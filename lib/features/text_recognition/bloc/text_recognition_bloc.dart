@@ -76,9 +76,10 @@ final class TextRecognitionBloc
     emit(const TextRecognitionInitial());
   }
 
+  /// No se llama a [TextRecognitionRepository.dispose]: el repositorio y el
+  /// [TextRecognizer] viven en el ámbito de la app (ver [AppBootstrap]) y se
+  /// comparten entre visitas a esta pantalla; cerrarlos aquí dejaría el OCR
+  /// inutilizable hasta reiniciar la app.
   @override
-  Future<void> close() async {
-    await _repository.dispose();
-    return super.close();
-  }
+  Future<void> close() async => super.close();
 }
